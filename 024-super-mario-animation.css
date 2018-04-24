@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+@keyframes suelo {
+  100% { background-position: -3000px 0px; }
+}
+
+.background {
+  background-image: url("animated-fondo.gif");
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+
+}
+
+.ground {
+  background-image: url("Suelo.png");
+  animation: suelo 18s steps(1000) 3s infinite forwards;
+  width: 100%;
+  height: 113px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0.8;
+}
+
+@keyframes mario {
+100% { background-position: -1393px 0px;}
+}
+
+@keyframes slide {
+100% {margin-left: 1850px;}
+}
+
+.mario-sprite {
+  width: 280px;
+  height: 340px;
+  position: relative;
+  background: url("sprite_new.png");
+  animation: mario 1s steps(5) infinite, slide 10s steps(1000) infinite;
+  bottom: -510px;
+  left: -200px;
+
+}
+@keyframes slide-left {
+  100% { margin-right: 2024px; }
+}
+
+.cloud {
+  background-image: url("dark_cloud_night_.png");
+  width: 442px;
+  height: 200px;
+  bottom: 800px;
+  right: -200px;
+  position: absolute;
+  animation: slide-left 10s steps(1000) infinite forwards;
+}
+.cloud-2 {
+  background-image: url("nubes14.png");
+  width: 442px;
+  height: 342px;
+  bottom: 500px;
+  right: -400px;
+  position: absolute;
+  animation: slide-left 10s steps(1000) 2s infinite forwards;
+
+}
+.dark-night{
+background-image: url("logo_moon.png");
+width: 184px;
+height: 104px;
+margin-left: 48%;
+position: absolute;
+top: 140px;
+opacity: 0.1;
+}
+
+.rain {
+  background-image: url("lluvia.png");
+  position: absolute;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  opacity: 0.2;
+}
