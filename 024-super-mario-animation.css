@@ -94,3 +94,15 @@ opacity: 0.1;
   overflow: hidden;
   opacity: 0.2;
 }
+@keyframes wolf {
+100% { background-position: -4045px 0px;}
+}
+.wolf {
+  width: 500px;
+  height: 246px;
+  position: relative;
+  background: url("animal.png");
+  animation: wolf 1s steps(8) infinite, slide 10s steps(1000) infinite;
+  bottom: -290px;
+  left: -800px;
+}
